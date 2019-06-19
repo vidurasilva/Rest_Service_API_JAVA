@@ -8,12 +8,12 @@ import javax.ws.rs.Produces;
 /**
  * Created by dinuka on 7/24/17.
  */
-@Path("/example")
+@Path("/shop")
 @Produces("application/json")
 public interface ExampleService {
     @GET
-    @Path("/{id}")
-    ExampleModel get(@PathParam("id") int id);
+    @Path("/get-meals/{shop-id}")
+    Meal getMealsByShop(@PathParam("shop-id") int id);
 }
 
 //http://localhost:8080/web-service/example/1
