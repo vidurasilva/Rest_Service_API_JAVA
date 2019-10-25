@@ -1,5 +1,6 @@
 package lk.dinuka.service;
 
+import org.apache.cxf.bus.spring.SpringBus;
 import org.springframework.stereotype.Service;
 
 import javax.swing.*;
@@ -11,7 +12,7 @@ import java.util.List;
  * Created by dinuka on 7/24/17.
  */
 @Service("exampleService")
-public class ExampleServiceImpl extends SpringI  ExampleService{
+public class ExampleServiceImpl extends SpringBus ExampleService{
 
     public Meal getMealsByShop(int id) {
         if (id == 1){
